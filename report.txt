@@ -1,4 +1,4 @@
-== SSH Brute-Force Report: ../logs/auth.log
+== SSH Brute-Force Report: auth.log
    failed attempts: 494 | source IPs with failures: 6 | successful logins: 61
 
 [CRITICAL] COMPROMISE 203.0.113.200   T1110 -> T1078  Accepted password for 'deploy' at 2026-11-14 14:55:25 after 38 prior failures
@@ -7,4 +7,4 @@
 [HIGH    ] SPRAY      192.0.2.77      T1110.003       failed against 16 distinct usernames
 [MEDIUM  ] SLOW       203.0.113.200   T1110.001       38 failures spread over 13:08:38 (evades rate-based rules)
 
-JSON written to ../output/alerts.json
+JSON written to alerts.json

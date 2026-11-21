@@ -73,6 +73,6 @@ emit(ts, p, f"Accepted password for deploy from {ip} port 51515 ssh2")
 emit(ts, p, "pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)")
 
 lines.sort(key=lambda x: x[0])
-out = Path(__file__).resolve().parent.parent / "logs" / "auth.log"
+out = Path(__file__).resolve().parent / "auth.log"
 out.write_text("\n".join(l for _, l in lines) + "\n")
 print(f"wrote {len(lines)} lines -> {out}")

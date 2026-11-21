@@ -9,7 +9,7 @@ Detections (MITRE ATT&CK T1110 - Brute Force):
   COMPROMISE a successful login from an IP that previously failed >= COMPROMISE_MIN times
 
 Usage:
-  python3 detect_bruteforce.py ../logs/auth.log --year 2026 --json ../output/alerts.json
+  python3 detect_bruteforce.py auth.log --year 2026 --json alerts.json
 """
 import argparse
 import json
