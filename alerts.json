@@ -1,0 +1,94 @@
+{
+  "stats": {
+    "total_failed": 494,
+    "unique_source_ips": 6,
+    "successful_logins": 61
+  },
+  "alerts": [
+    {
+      "type": "COMPROMISE",
+      "technique": "T1110 -> T1078",
+      "severity": "CRITICAL",
+      "ip": "203.0.113.200",
+      "detail": "Accepted password for 'deploy' at 2026-11-14 14:55:25 after 38 prior failures",
+      "total_failures": 38,
+      "users": [
+        "deploy"
+      ]
+    },
+    {
+      "type": "BURST",
+      "technique": "T1110.001",
+      "severity": "HIGH",
+      "ip": "203.0.113.45",
+      "detail": "138 failures in 2 min (peak starting 2026-11-14 03:14:37)",
+      "total_failures": 400,
+      "users": [
+        "root"
+      ]
+    },
+    {
+      "type": "BURST",
+      "technique": "T1110.001",
+      "severity": "HIGH",
+      "ip": "192.0.2.77",
+      "detail": "33 failures in 2 min (peak starting 2026-11-14 09:40:03)",
+      "total_failures": 48,
+      "users": [
+        "admin",
+        "ec2-user",
+        "ftpuser",
+        "git",
+        "guest",
+        "jenkins",
+        "minecraft",
+        "mysql",
+        "oracle",
+        "pi",
+        "postgres",
+        "support",
+        "test",
+        "ubuntu",
+        "user",
+        "www-data"
+      ]
+    },
+    {
+      "type": "SPRAY",
+      "technique": "T1110.003",
+      "severity": "HIGH",
+      "ip": "192.0.2.77",
+      "detail": "failed against 16 distinct usernames",
+      "total_failures": 48,
+      "users": [
+        "admin",
+        "ec2-user",
+        "ftpuser",
+        "git",
+        "guest",
+        "jenkins",
+        "minecraft",
+        "mysql",
+        "oracle",
+        "pi",
+        "postgres",
+        "support",
+        "test",
+        "ubuntu",
+        "user",
+        "www-data"
+      ]
+    },
+    {
+      "type": "SLOW",
+      "technique": "T1110.001",
+      "severity": "MEDIUM",
+      "ip": "203.0.113.200",
+      "detail": "38 failures spread over 13:08:38 (evades rate-based rules)",
+      "total_failures": 38,
+      "users": [
+        "deploy"
+      ]
+    }
+  ]
+}
